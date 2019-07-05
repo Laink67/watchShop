@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:orientation="vertical"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <include layout="@layout/toolbar"/>
+
+        <androidx.viewpager.widget.ViewPager
+                android:layout_below="@+id/main_toolbar"
+                android:id="@+id/main_viewpager"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+        />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabIconTint="@color/colorPrimaryDark"
+            android:background="@color/colorWhite"
+            android:layout_gravity="bottom"
+    >
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/home_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_home_24dp"
+        />
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/brands_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_watch_black_56dp"
+        />
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/person_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_person_24dp"
+        />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

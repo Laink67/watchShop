@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        tools:context=".activities.AuthenticationActivity"
+>
+
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/sentry"
+            style="@style/textTitle"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_watch_black_56dp"
+            android:drawableEnd="@drawable/ic_watch_black_56dp"
+            app:fontFamily="@font/didact_gothic"/>
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <AutoCompleteTextView
+                android:id="@+id/authentication_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/your_nickname"
+                android:layout_gravity="center"
+                android:inputType="textPersonName"
+        />
+
+        <AutoCompleteTextView
+                android:id="@+id/authentication_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/your_password"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+        />
+
+
+        <Button
+                android:id="@+id/button_login"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:layout_gravity="center"
+        />
+    </LinearLayout>
+    <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_weight="0.5"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+    />
+    <TextView
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/forgot_password"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

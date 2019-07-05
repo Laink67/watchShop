@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">watchShop</string>
+    <string name="login">Login</string>
+    <string name="your_nickname">Your nickname</string>
+    <string name="your_password">Your password</string>
+    <string name="sentry">Sentry</string>
+    <string name="forgot_password">Forgot password ?</string>
+</resources>
